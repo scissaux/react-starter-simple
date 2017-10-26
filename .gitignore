@@ -24,3 +24,7 @@ $RECYCLE.BIN/
 # OS X
 .DS_Store
 
+# Project files
+/build/**
+node_modules
+
