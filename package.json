@@ -1,0 +1,11 @@
+{
+  "name": "orten-io-react-starter-simple",
+  "version": "1.0.0",
+  "description": "Start your React project!",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Orten.io",
+  "license": "MIT"
+}
