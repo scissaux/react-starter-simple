@@ -12,5 +12,5 @@ Use your terminal to navigated to the directory to where you downloaded this pro
   to see your project.
 
 The HTML used can be found in the file `webpack-dev-server-content-base/index.html`. The visible
-  JavaScript is in `src/App/index.js`. If you're looking for `ReactDOM.render()`, it's in
+  JavaScript is in `src/components/App/index.js`. If you're looking for `ReactDOM.render()`, it's in
   `src/index.js` along with some other stuff to make your life easier when developing.
