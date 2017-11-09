@@ -6,10 +6,17 @@
     font: sans-serif arial;
     font-size: 25px;
     color: #fff;
-    background-color: rgb(8, 8, 8);
+    background-color: #48c9b0;
     text-align: center;
     border-style: solid;
     margin: 10px;
-    display: block;
+    
 
+}
+
+.addNewContainer {
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: solid 2px;
+    border-bottom-color: #2874A6;
 }

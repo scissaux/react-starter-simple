@@ -8,7 +8,7 @@ class AddBlabber extends React.Component {
     }
     render() {
         return (
-            <div>
+            <div className='addNewContainer'>
                 <button className='addNew'>+</button>
             </div>
         )
