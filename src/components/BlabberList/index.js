@@ -2,8 +2,10 @@ import React from 'react'
 
 import Blabber from '../Blabber'
 
+import './style.css'
+
 const BlabberList = () => (
-    <ul>
+    <ul className='blabberList'>
         <li>
             <Blabber text='Blabber 1'/>
         </li>

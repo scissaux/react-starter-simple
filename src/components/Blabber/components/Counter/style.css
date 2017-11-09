@@ -1,0 +1,27 @@
+.counter-plus {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    font: sans-serif arial;
+    font-size: 16px;
+    color: #fff;
+    background-color: #3498db;
+    text-align: center;
+    border-style: solid;
+    margin: 10px;
+    
+}
+
+.counter-minus {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    font: sans-serif arial;
+    font-size: 16px;
+    color: #fff;
+    background-color: #3498db;
+    text-align: center;
+    border-style: solid;
+    margin: 10px;
+    
+}
