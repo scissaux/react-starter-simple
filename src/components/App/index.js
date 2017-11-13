@@ -8,12 +8,30 @@ import './style.css'
 
 
 class App extends React.Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      blabbers: [],
+    }
+  }
+
+  componentDidMount () {
+    
+    fetch('http://api.ortenblabber.com/blabbers')
+    .then(response => {
+      return response.json()
+    })
+    .then(json => {
+      this.setState({ blabbers: json})
+    })
+  }
   render() {
     return (
       <div className="container">
         <Header />
         <AddBlabber />
-        <BlabberList />
+        <BlabberList blabbers={this.state.blabbers} />
     
         
         
