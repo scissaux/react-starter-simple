@@ -6,7 +6,7 @@ import Counter from './components/Counter'
 const Blabber = (props) => (
     <div className='blabber-container'>
         <p>{props.text}</p>
-        <Counter />
+        <Counter votes={props.votes} />
 
     </div>
 )

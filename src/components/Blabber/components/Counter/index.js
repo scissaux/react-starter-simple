@@ -5,7 +5,7 @@ import './style.css'
 const Counter = (props) => (
     <div>
         <button className='counter-plus'>+</button>
-        12
+        <div className='votes'>{props.votes}</div>
         <button className='counter-minus'>-</button>
         
     </div>
