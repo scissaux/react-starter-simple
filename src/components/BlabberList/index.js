@@ -4,24 +4,16 @@ import Blabber from '../Blabber'
 
 import './style.css'
 
-const BlabberList = () => (
+const BlabberList = (props) => {
+    return (
     <ul className='blabberList'>
-        <li>
-            <Blabber text='Blabber 1'/>
-        </li>
-        <li>
-            <Blabber text='Blabber 2'/>
-        </li>
-        <li>
-            <Blabber text='Blabber 3'/>
-        </li>
-        <li>
-            <Blabber text='Blabber 4'/>
-        </li>
-        <li>
-            <Blabber text='Blabber 5'/>
-        </li>
+        {props.blabbers.map(blabber => {
+            return (
+                <li><Blabber text={blabber.text} /></li>
+            )
+        } )}
     </ul>
 )
+}
 
 export default BlabberList
