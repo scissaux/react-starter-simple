@@ -1,16 +1,31 @@
 import React from 'react'
 
+import Button from './components/Button'
+import Form from './components/Form'
+
 import './style.css'
 
 class AddBlabber extends React.Component {
-    constructor (){
-        super()
+    constructor (props) {
+        super(props)
+
+        this.state = {isFormVisible: false}
+        
     }
+
+
+
     render() {
         return (
-            <div className='addNewContainer'>
-                <button className='addNew'>+</button>
-            </div>
+            <div>
+                {this.state.isFormVisible
+                ? <Form />
+            : <Button handleClick={() => 
+            
+            {this.setState({isFormVisible: true})} } />}
+                
+
+            </div>      
         )
     }
 }
