@@ -15,13 +15,23 @@ class Form extends React.Component {
         
         <textarea 
             value={this.state.text} 
-            placeholder='Type your text here...' 
+            placeholder='Type your blabber here...' 
             className='text-area'
             onChange={(event) => {this.setState({text: event.currentTarget.value})}} 
             />
             
         <div>
-            <button className='new-post'>Post</button>
+            <button className='cancel-form'>Cancel</button>
+
+            <button className='new-post' onClick={()=>{
+                fetch('http://api.ortenblabber.com/blabbers', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type' : 'application/json'
+                    },
+                    body: JSON.stringify({text: this.state.text})
+                })
+            }} >Post</button>
         </div>
 
     </div>
