@@ -12,6 +12,10 @@
     
 }
 
+.counter-plus:hover {
+    background-color: #2874a6;
+}
+
 
 .counter-minus {
     height: 30px;
@@ -25,6 +29,10 @@
     border-style: solid;
     margin: 10px;
     
+}
+
+.counter-minus:hover {
+    background-color: #2874a6;
 }
 
 .votes {
