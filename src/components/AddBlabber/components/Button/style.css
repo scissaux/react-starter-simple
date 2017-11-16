@@ -13,6 +13,10 @@
 
 }
 
+.addNew:hover {
+    background-color: #a3e4d7;
+}
+
 
 .addNewContainer {
     text-align: center;
