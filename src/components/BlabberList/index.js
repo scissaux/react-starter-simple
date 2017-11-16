@@ -9,7 +9,8 @@ const BlabberList = (props) => {
     <ul className='blabberList'>
         {props.blabbers.map(blabber => {
             return (
-                <li key={blabber.id} ><Blabber text={blabber.text} votes={blabber.votes} /></li>
+                <li key={blabber.id} ><Blabber text={blabber.text} 
+                votes={blabber.votes} comments={blabber.comments} /></li>
             )
         } )}
     </ul>
